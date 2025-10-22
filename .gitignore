@@ -1,0 +1,61 @@
+# Django #
+*.log
+*.pot
+*.pyc
+logs/
+__pycache__/
+db.sqlite3
+media/
+staticfiles/
+*.env
+backup-db.sh
+
+# Python #
+venv/
+env/
+ENV/
+*.py[cod]
+*$py.class
+
+# Docker #
+**/Dockerfile
+**/docker-compose.yml
+**/.dockerignore
+**/docker-compose.override.yml
+.docker/
+docker-compose.override.yml
+docker-compose.yml
+docker-compose*.yml
+docker-entrypoint.sh
+
+# IDEs and editors #
+.vscode/
+.idea/
+*.swp
+*~
+
+# OS generated files #
+.DS_Store
+Thumbs.db
+
+# Pytest #
+.cache/
+coverage.xml
+htmlcov/
+*.cover
+*.py,cover
+nosetests.xml
+.coverage
+
+# Ignore migrations #
+*/migrations/*.py
+!*/migrations/__init__.py
+
+# AWS #
+.aws/
+.env.aws
+nginx.aws.conf
+deploy-ec2.sh
+
+# nginx #
+nginx.conf
