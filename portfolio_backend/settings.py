@@ -139,7 +139,7 @@ else:
 # CORS
 CORS_ALLOWED_ORIGINS = config(
     'CORS_ALLOWED_ORIGINS',
-    default='http://localhost:4200',
+    default='http://localhost,http://localhost:80,http://localhost:4200',
     cast=lambda v: [s.strip() for s in v.split(',')]
 )
 
@@ -148,7 +148,7 @@ CORS_ALLOW_CREDENTIALS = True
 # CSRF
 CSRF_TRUSTED_ORIGINS = config(
     'CSRF_TRUSTED_ORIGINS',
-    default='http://localhost:4200',
+    default='http://localhost,http://localhost:80,http://localhost:4200',
     cast=lambda v: [s.strip() for s in v.split(',')]
 )
 
